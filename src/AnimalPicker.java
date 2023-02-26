@@ -13,16 +13,19 @@ public class AnimalPicker {
             animal = scanner.nextLine(); 
             //Return the animal art requested or ask user again
             if(animal.equals("cat")) {
-                System.out.println("Cat ASCII Art Placeholder");
+                //Cat ASCII Art
+                System.out.println(" _._     _,-\'\"\"`-._\n(,-.`._,\'(       |\\`-/|\n    `-.-\' \\ )-`( , o o)\n          `-    \\`_`\"\'-");
             }
             else if(animal.equals("dog")) {
-                System.out.println("Dog ASCII Art Placeholder");
+                //Dog ASCII Art
+                System.out.println("          __\n \\ ______/ V`-,\n  }        /~~\n /_)^ --,r\'\n|b      |b");
             }
             else {
                 System.out.println("Invalid Input, Try Again!");
             }
         }
 
+        //Close scanner object
         scanner.close();
     }
 }
