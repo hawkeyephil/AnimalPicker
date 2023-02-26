@@ -10,15 +10,17 @@ public class AnimalPicker {
         Scanner scanner = new Scanner(System.in);
         String animal = scanner.nextLine();
 
+        //Return an error if cat or dog is not entered
+        if(!animal.equals("cat") && !animal.equals("dog")) {
+            System.out.println("Invalid Input.");
+        }
+
         //Return the animal art requested
         if(animal.equals("cat")) {
             System.out.println("Cat ASCII Art Placeholder");
         }
-        else if(animal.equals("dog")) {
+        if(animal.equals("dog")) {
             System.out.println("Dog ASCII Art Placeholder");
-        }
-        else {
-            System.out.println("Invalid Input.");
         }
         scanner.close();
     }
